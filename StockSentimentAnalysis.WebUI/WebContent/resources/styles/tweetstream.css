@@ -1,0 +1,45 @@
+
+/* =========== GENERAL PAGE STYLES =========== */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #ffffff;
+	height: 100%;
+}
+
+.TT {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.TT_Light {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	font-size: 10pt;
+	background: rgb(231,239,248);
+}
+
+.TT_Dark {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	font-size: 10pt;
+	background: rgb(203,221,240);
+}
+
+.TweetText 
+{
+    display: block;
+    margin-left:  175px;
+}
+
+.TweetDateTime 
+{
+    display: inline;
+    float: left;
+    width: 175px;
+}

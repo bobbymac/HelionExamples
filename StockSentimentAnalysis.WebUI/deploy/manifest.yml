@@ -1,0 +1,12 @@
+---
+applications:
+- name: SSA-Demo-Web
+  instances: 1
+  mem: 512M
+  services:
+    stocksentiment-db:
+      type: mysql
+  path: StockSentimentAnalysis.WebUI.war
+#  helion:
+#    env:
+#     EXTERNAL_DATABASE_URL:  jdbc:mysql://15.125.35.31:3306/stocksentiment?user=<USER>&password=<PASSWORD>

@@ -1,0 +1,136 @@
+
+/* =========== GENERAL PAGE STYLES =========== */
+
+body 
+{
+    margin-left:10px;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 10pt;
+	background: #ffffff;
+	height: 100%;
+}
+
+#header
+{
+    margin-left:-10px;
+    height: 80px;
+    background-color:#0096D6;
+}
+
+#footer
+{
+    margin-top:60px;
+    margin-left:-10px;
+    height: 20px;
+    background-color:#0096D6;
+    margin-bottom:100px;
+}
+
+#hplogo
+{
+    padding-left:15px;
+    padding-top:15px;
+}
+
+#wrap { 
+	width: 800px; 
+	margin: 0 auto; 
+}
+
+#title {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 18pt;
+	padding-left:25px;
+	padding-top:20px;
+	position:absolute;
+}
+
+#subtitle {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 11pt;
+	padding-left:25px;
+	padding-top:45px;
+	position:absolute;
+}
+
+.MenuBarButton_Selected
+{
+    text-align:center;
+    display:inline-block;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #FFFFFF;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 10pt;
+    margin-left:-10px;
+    height: 20px;
+    background-color:rgb(240,83,50);
+}
+
+.MenuBarButton
+{
+    text-align:center;
+    display:inline-block;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #FFFFFF;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 10pt;
+    margin-left:-10px;
+    height: 20px;
+    background-color:#0096D6;
+}
+
+.MenuBarButton:hover
+{
+    text-align:center;
+    display:inline-block;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #FFFFFF;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 10pt;
+    margin-left:-10px;
+    height: 20px;
+    background-color:rgb(77,202,255);
+}
+
+.MenuBarPlaceholder
+{
+    display:inline-block;
+    width:345px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #FFFFFF;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 10pt;
+    margin-left:-10px;
+    height: 20px;
+    background-color:#0096D6;
+}
+
+.NoDataFound 
+{
+    width:100%;
+    text-align:center;
+    margin-left:-10px;
+    padding-top:40px;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+	color: #000000;
+}

@@ -1,0 +1,25 @@
+applications:
+- name: SSA-Demo-MessageProcessor
+  instances: 1
+  command: java -jar MessageProcessor.jar
+  mem: 256M
+  services:
+    twitterfeed-mq:
+      type: rabbitmq
+    stocksentiment-db:
+      type: mysql
+  url: []
+  framework:
+     name:  standalone
+  runtime: java7
+  helion:
+    env:
+      RABBITMQ_QUEUE: tweetqueue
+#      EXTERNAL_RABBITMQ_URL:  amqps://nick:walker@10.8.50.238:5671/%2f
+      SENTIMENT_NEGATIVE_TERMS:  Sell,Selling,Sold,Bear,Bearish,Hate,Loser
+      SENTIMENT_POSITIVE_TERMS:  Buy,Buying,Bought,Bull,Bullish,Love,Winner
+      TRACK_TERMS:  AAPL,HPQ,MSFT,GOOG,AA,MU,LAKE,IOGA,HALO,FB,GE,CSX,TSLA,INTC,TWTR,GM
+#     EXTERNAL_DATABASE_URL:  jdbc:mysql://15.125.35.31:3306/stocksentiment?user=<USER>&password=<PASSWORD>
+    hooks:
+      post-staging:
+        - dbshell < FullDBForDeploy.sql

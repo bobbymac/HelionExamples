@@ -1,0 +1,26 @@
+applications:
+- name: SSA-Demo-DataCollection
+  instances: 1
+  command: java -jar DataCollection.jar
+  mem: 256M
+  services:
+    twitterfeed-mq:
+      type: rabbitmq
+  url: []
+  framework:
+     name:  standalone
+  runtime: java7
+  helion:
+    env:
+      RABBITMQ_QUEUE: tweetqueue
+#      EXTERNAL_RABBITMQ_URL:  amqps://nick:walker@10.8.50.238:5671/%2f 
+      TWAPIKEY:  ZXsSoY1L7VFwzPFfoUrwyUU5l
+      TWAPISECRET:  2GUPp3dtVxYly3IFISnzTSyt2wwISwZRQZR4toMu0IJXFDh6hu
+      TWTOKEN:  2811597337-FeIxwLGgy2gH7gW8x0WIdrtEe5q8mzS8bYZQ4xx
+      TWTOKENSECRET:  goaQHJwTYHOrw9mGbFxSni4Jy2mW1I5ICwnaaxZ54U48h
+      TRACK_TERMS:  AAPL,HPQ,MSFT,GOOG,AA,MU,LAKE,IOGA,HALO,FB,GE,CSX,TSLA,INTC,TWTR,GM
+      PROXY_ENABLED:  0
+      APP_HTTP_PROXY_HOST:  http://web-proxy.uswest.hpcloud.net
+      APP_HTTP_PROXY_PORT:  8080
+      APP_HTTPS_PROXY_HOST:  http://web-proxy.uswest.hpcloud.net
+      APP_HTTPS_PROXY_PORT:  8080
